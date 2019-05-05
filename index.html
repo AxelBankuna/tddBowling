@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TDD Bowling App</title>
+</head>
+<body>
+
+<h1>Ten Pin Bowling</h1>
+
+<form action="" id="names">
+    Name: <input type="text" id="name" placeholder="Player Name">
+    <button type="submit" onclick="addPlayer(event)">Add Player</button>
+</form>
+
+<div id="scoreBoard" style="display: none;">
+    <p id="currentNext"></p>
+    <form action="" id="scoreForm">
+        Throw Score: <input type="number" id="throwScore" placeholder="# of pins down" style="width: 100px;">
+        <button type="submit" onclick="markScore(event)">Submit</button>
+    </form>
+</div>
+<br><hr>
+<button id="startGame" onclick="startGame(event)" disabled>Start Game</button>
+
+<div id="players">
+    <h2>Players:</h2>
+    <p id="playerNames"></p>
+</div>
+
+<div id="playerDetails"></div>
+<br><hr>
+<div id="showDetails"></div>
+
+<script src="Player.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
